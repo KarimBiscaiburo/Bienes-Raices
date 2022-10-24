@@ -1,11 +1,17 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Header from "./Header";
 
 function Nosotros () {
 
     return(
-        <main>
-            <h1>Nosotros</h1>
-        </main>
+        <Fragment>
+            <Header clase="header" />
+
+            <main>
+                <h1>Nosotros</h1>
+            </main>
+        </Fragment>
+
     ) 
 }
 

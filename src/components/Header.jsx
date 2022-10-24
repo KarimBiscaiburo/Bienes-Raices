@@ -1,19 +1,18 @@
 import React from "react";
 import Navegacion from "./Navegacion";
+import { Link } from "react-router-dom";
 
-function Header() {
+function Header( {clase, titulo} ) {
 
     return(
-        <header className="header">
+        <header className={clase}>
             <div className="contenedor contenido-header">
                 <div className="barra">
-                    <a href="/" className="logo">BIENES<span>RAICES</span></a>
-
+                    <Link to="/" className="logo">BIENES<span>RAICES</span></Link>
                     <Navegacion />
-
                 </div>
 
-                <h2>Venta de Casas y Departamentos Exclusivos de Lujo</h2>
+                {titulo ? <h1>{titulo}</h1> : null}
             </div>
         </header>
     )

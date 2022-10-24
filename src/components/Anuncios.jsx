@@ -1,11 +1,16 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Header from "./Header";
 
 function Anuncios () {
 
     return(
-        <main>
-            <h1>Anuncios</h1>
-        </main>
+        <Fragment>
+            <Header clase="header" />
+            
+            <main>
+                <h1>Anuncios</h1>
+            </main>
+        </Fragment>
     ) 
 }
 

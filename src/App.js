@@ -1,6 +1,5 @@
 import "./scss/app.scss";
 import { Route, Routes } from "react-router-dom";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Inicio from "./components/Inicio";
 import Nosotros from "./components/Nosotros";
@@ -13,10 +12,8 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-
       <Routes>
-
+        
         <Route path="/" element={ <Inicio />} />
         <Route path="/nosotros" element={ <Nosotros />} />
         <Route path="/anuncios" element={ <Anuncios />} />
@@ -26,6 +23,7 @@ function App() {
       </Routes>
       
       <Footer />
+
     </div>
   );
 }
