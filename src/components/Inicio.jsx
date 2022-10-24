@@ -7,6 +7,8 @@ import Header from "./Header";
 
 // Imagenes
 import anuncio1 from "../img/anuncio1.jpg"
+import anuncio2 from "../img/anuncio2.jpg"
+import anuncio3 from "../img/anuncio3.jpg"
 import icono_wc from "../img/icono_wc.svg";
 import icono_estacionamiento from "../img/icono_estacionamiento.svg";
 import icono_dormitorio from "../img/icono_dormitorio.svg";
@@ -81,7 +83,69 @@ function Inicio() {
                                 Ver Propiedad
                             </Link>
                         </div>
+                    </div> 
+
+                    <div className="anuncio">
+                        <img loading="lazy" src={anuncio2} alt="anuncio" />
+
+                        <div className="contenedor-anuncio">
+                            <h3>Casa terminados de Lujo</h3>
+                            <p>Casa en el lago con exelentes vistas y a un increible precio</p>
+                            <p className="precio">$3.000.000</p>
+
+                            <ul className="iconos-caracteristicas">
+                                <li>
+                                    <img loading="lazy" src={icono_wc} alt="icono wc" />
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
+                                    <p>3</p>
+                                </li>
+                            </ul>
+
+                            <Link to="/anuncios" className="boton boton-amarillo">
+                                Ver Propiedad
+                            </Link>
+                        </div>
                     </div>
+
+                    <div className="anuncio">
+                        <img loading="lazy" src={anuncio3} alt="anuncio" />
+
+                        <div className="contenedor-anuncio">
+                            <h3>Casa con Pileta</h3>
+                            <p>Casa en el lago con exelentes vistas y a un increible precio</p>
+                            <p className="precio">$3.000.000</p>
+
+                            <ul className="iconos-caracteristicas">
+                                <li>
+                                    <img loading="lazy" src={icono_wc} alt="icono wc" />
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
+                                    <p>3</p>
+                                </li>
+                            </ul>
+
+                            <Link to="/anuncios" className="boton boton-amarillo">
+                                Ver Propiedad
+                            </Link>
+                        </div>
+                    </div> 
+                </div>
+
+                <div className="alinear-derecha">
+                        <Link to="/anuncios" className="boton boton-verde">Ver Todas</Link>
                 </div>
             </section>
 
