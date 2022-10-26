@@ -1,5 +1,5 @@
 @use "../base/variables" as v;
-@use "../base//mixins" as m;
+@use "../base/mixins" as m;
 
 .icono {
     text-align: center;
@@ -59,6 +59,8 @@
     }
 }
 
+/*---------------APARTADO CONTACTAR---------------*/
+
 .imagen-contacto {
     background-image: url(../../img/encuentra.jpg);
     background-size: cover;
@@ -79,3 +81,94 @@
         font-size: 1.8rem;
     }
 }
+
+/*---------------APARTADO CONTACTAR---------------*/
+
+/*---------------APARTADO NUESTRO BLOG---------------*/
+
+@include m.tablet {
+    .seccion-inferior {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.entrada-blog {
+    margin-bottom: 2rem;
+
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+    }
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+.texto-entrada {
+
+    a {
+        margin-top: 2rem;
+        display: block;
+        @include m.tablet {
+            margin-top: 0;
+        }
+    }
+    h4 {
+        color: v.$negro;
+        line-height: 1.4;
+        margin: 0;
+
+
+        &::after {
+            content: "";
+            display: block;
+            width: 15rem;
+            height: .5rem;
+            background-color: v.$verde;
+            margin-top: 1rem;
+        }
+    }
+    span {
+        color: v.$amarillo;
+    }
+}
+
+/*---------------APARTADO NUESTRO BLOG / TESTIMONIALES---------------*/
+
+.testimonial {
+    background-color: v.$verde;
+    font-size: 2.4rem;
+    padding: 2rem;
+    color: v.$blanco;
+    border-radius: 2rem;
+
+    blockquote {
+        padding-left: 5rem;
+        position: relative;
+
+        &::before {
+            content: "";
+            background-image: url(../../img/comilla.svg);
+            background-repeat: no-repeat;
+            width: 6rem;
+            height: 8rem;
+            display: block;
+            //El elemento de arriba en este caso el blockquote debe tener el position relative para que este elemento se posicione de manera absoluta al blockquote. De lo contrario se posicionaria de manera absoluta al documento
+            position: absolute;
+            left: -2rem;
+        }
+    }
+    
+    p {
+        text-align: right;
+        color: v.$blanco;
+    }
+}
+
+/*---------------APARTADO NUESTRO BLOG / TESTIMONIALES---------------*/
+
+/*---------------APARTADO NUESTRO BLOG---------------*/
