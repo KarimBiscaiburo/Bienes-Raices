@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 //Componentes
 import Header from "./Header";
+import Iconos from "./Iconos";
 
 // Imagenes
 import anuncio1 from "../img/anuncio1.jpg"
@@ -23,36 +24,7 @@ function Inicio() {
             <Header clase="header inicio" titulo="Venta de Casas y Departamentos Exclusivos de Lujo" />
 
             <main>
-                <h2>Más sobre nosotros</h2>
-
-                <div className="iconos-nosotros">
-                    <div className="icono">
-
-                        {/* HAY QUE CAMBIAR LOS SVG POR LOS QUE CORRESPONDEN EN LA CARPETA IMG (IMPORTARLOS) */}
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                        </svg>
-                        <h3>Seguridad</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint tempora totam eligendi consequatur laboriosam dolorem praesentium voluptatem sunt fugit fugiat, ullam quae vero amet, incidunt quasi, repellendus quod inventore.</p>
-                    </div>
-                    <div className="icono">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-
-
-                        <h3>Precio</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint tempora totam eligendi consequatur laboriosam dolorem praesentium voluptatem sunt fugit fugiat, ullam quae vero amet, incidunt quasi, repellendus quod inventore.</p>
-                    </div>
-                    <div className="icono">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-
-                        <h3>A Tiempo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta sint tempora totam eligendi consequatur laboriosam dolorem praesentium voluptatem sunt fugit fugiat, ullam quae vero amet, incidunt quasi, repellendus quod inventore.</p>
-                    </div>
-                </div>
+                <Iconos />
             </main>
 
             <section className="seccion contenedor">
