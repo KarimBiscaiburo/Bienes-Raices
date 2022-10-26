@@ -79,7 +79,7 @@ function Inicio() {
                                 </li>
                             </ul>
 
-                            <Link to="/anuncios" className="boton boton-amarillo">
+                            <Link to="/anuncios" className="boton-amarillo-block">
                                 Ver Propiedad
                             </Link>
                         </div>
@@ -108,7 +108,7 @@ function Inicio() {
                                 </li>
                             </ul>
 
-                            <Link to="/anuncios" className="boton boton-amarillo">
+                            <Link to="/anuncios" className="boton-amarillo-block">
                                 Ver Propiedad
                             </Link>
                         </div>
@@ -137,7 +137,7 @@ function Inicio() {
                                 </li>
                             </ul>
 
-                            <Link to="/anuncios" className="boton boton-amarillo">
+                            <Link to="/anuncios" className="boton-amarillo-block">
                                 Ver Propiedad
                             </Link>
                         </div>
@@ -147,6 +147,13 @@ function Inicio() {
                 <div className="alinear-derecha">
                         <Link to="/anuncios" className="boton boton-verde">Ver Todas</Link>
                 </div>
+            </section>
+
+            <section className="imagen-contacto">
+                <h2>Encuentra la casa de tus sueños</h2>
+                <p>Llena el formulario de contacto y un asesor se pondra en contacto contigo a la brevedad</p>
+                <Link to="/contacto" className="boton-amarillo">Contactanos</Link>
+
             </section>
 
         </Fragment>
