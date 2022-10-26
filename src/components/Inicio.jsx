@@ -5,14 +5,12 @@ import { Link } from "react-router-dom";
 //Componentes
 import Header from "./Header";
 import Iconos from "./Iconos";
+import Anuncio from "./Anuncio";
 
 // Imagenes
-import anuncio1 from "../img/anuncio1.jpg"
-import anuncio2 from "../img/anuncio2.jpg"
-import anuncio3 from "../img/anuncio3.jpg"
-import icono_wc from "../img/icono_wc.svg";
-import icono_estacionamiento from "../img/icono_estacionamiento.svg";
-import icono_dormitorio from "../img/icono_dormitorio.svg";
+import anuncio1 from "../img/anuncio1.jpg";
+import anuncio2 from "../img/anuncio2.jpg";
+import anuncio3 from "../img/anuncio3.jpg";
 import blog1 from "../img/blog1.jpg";
 import blog2 from "../img/blog2.jpg";
 
@@ -31,92 +29,35 @@ function Inicio() {
                 <h2>Casas y Departamentos en Venta</h2>
 
                 <div className="contenedor-anuncios">
-                    <div className="anuncio">
-                        <img loading="lazy" src={anuncio1} alt="anuncio" />
+                    <Anuncio 
+                        imgAnuncio={anuncio1}
+                        titulo="Casa de Lujo en el Lago"
+                        descripcion="Casa en el lago con exelentes vistas y a un increible precio"
+                        precio="$3.000.000"
+                        baños="4"
+                        estacionamientos="2"
+                        dormitorios="3"
+                    /> 
 
-                        <div className="contenedor-anuncio">
-                            <h3>Casa de Lujo en el Lago</h3>
-                            <p>Casa en el lago con exelentes vistas y a un increible precio</p>
-                            <p className="precio">$3.000.000</p>
+                    <Anuncio 
+                        imgAnuncio={anuncio2}
+                        titulo="Casa terminados de Lujo"
+                        descripcion="Casa moderna y acabados de lujo a un increible precio"
+                        precio="$2.000.000"
+                        baños="3"
+                        estacionamientos="1"
+                        dormitorios="2"
+                    /> 
 
-                            <ul className="iconos-caracteristicas">
-                                <li>
-                                    <img loading="lazy" src={icono_wc} alt="icono wc" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
-                                    <p>3</p>
-                                </li>
-                            </ul>
-
-                            <Link to="/anuncios" className="boton-amarillo-block">
-                                Ver Propiedad
-                            </Link>
-                        </div>
-                    </div> 
-
-                    <div className="anuncio">
-                        <img loading="lazy" src={anuncio2} alt="anuncio" />
-
-                        <div className="contenedor-anuncio">
-                            <h3>Casa terminados de Lujo</h3>
-                            <p>Casa en el lago con exelentes vistas y a un increible precio</p>
-                            <p className="precio">$3.000.000</p>
-
-                            <ul className="iconos-caracteristicas">
-                                <li>
-                                    <img loading="lazy" src={icono_wc} alt="icono wc" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
-                                    <p>3</p>
-                                </li>
-                            </ul>
-
-                            <Link to="/anuncios" className="boton-amarillo-block">
-                                Ver Propiedad
-                            </Link>
-                        </div>
-                    </div>
-
-                    <div className="anuncio">
-                        <img loading="lazy" src={anuncio3} alt="anuncio" />
-
-                        <div className="contenedor-anuncio">
-                            <h3>Casa con Pileta</h3>
-                            <p>Casa en el lago con exelentes vistas y a un increible precio</p>
-                            <p className="precio">$3.000.000</p>
-
-                            <ul className="iconos-caracteristicas">
-                                <li>
-                                    <img loading="lazy" src={icono_wc} alt="icono wc" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
-                                    <p>3</p>
-                                </li>
-                                <li>
-                                    <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
-                                    <p>3</p>
-                                </li>
-                            </ul>
-
-                            <Link to="/anuncios" className="boton-amarillo-block">
-                                Ver Propiedad
-                            </Link>
-                        </div>
-                    </div> 
+                    <Anuncio 
+                        imgAnuncio={anuncio3}
+                        titulo="Casa con Piscina"
+                        descripcion="Casa rustica con piscina a un increible precio"
+                        precio="$4.000.000"
+                        baños="5"
+                        estacionamientos="3"
+                        dormitorios="4"
+                    /> 
                 </div>
 
                 <div className="alinear-derecha">
