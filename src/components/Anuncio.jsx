@@ -6,7 +6,8 @@ import icono_wc from "../img/icono_wc.svg";
 import icono_estacionamiento from "../img/icono_estacionamiento.svg";
 import icono_dormitorio from "../img/icono_dormitorio.svg";
 
-function Anuncio ( {imgAnuncio, titulo, descripcion, precio, baños, estacionamientos, dormitorios } ) {
+function Anuncio ( { numero, imgAnuncio, titulo, descripcion, precio, baños, estacionamientos, dormitorios } ) {
+
     return (
         <Fragment>
             <div className="anuncio">
@@ -31,10 +32,11 @@ function Anuncio ( {imgAnuncio, titulo, descripcion, precio, baños, estacionami
                             <p>{dormitorios}</p>
                         </li>
                     </ul>
-
-                    <Link to="/anuncios" className="boton-amarillo-block">
-                        Ver Propiedad
+                    
+                    <Link to={`/detalle-anuncio/${numero}`} className="boton-amarillo-block">
+                        Ver Propiedad {numero}
                     </Link>
+              
                 </div>
             </div> 
         </Fragment>

@@ -8,7 +8,7 @@ function Blog () {
             <Header clase="header" />
 
             <main>
-                <h1>Blog</h1>
+                <h1>Nuestro Blog</h1>
             </main>
         </Fragment>
     ) 

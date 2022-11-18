@@ -13,6 +13,70 @@ import anuncio5 from "../img/anuncio5.jpg";
 import anuncio6 from "../img/anuncio6.jpg";
 
 function Anuncios () {
+    
+    const arregloAnuncio = [
+        {
+            "numero" : 1,
+            "imgAnuncio" : anuncio1,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+        },
+        {
+            "numero" : 2,
+            "imgAnuncio" : anuncio2,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+        },
+        {
+            "numero" : 3,
+            "imgAnuncio" : anuncio3,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+        },
+        {
+            "numero" : 4,
+            "imgAnuncio" : anuncio4,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+        },
+        {
+            "numero" : 5,
+            "imgAnuncio" : anuncio5,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+
+        },
+        {
+            "numero" : 6,
+            "imgAnuncio" : anuncio6,
+            "titulo" : "Casa de Lujo en el Lago",
+            "descripcion" : "Casa en el lago con exelentes vistas y a un increible precio",
+            "precio" : "$3.000.000",
+            "baños" : 4,
+            "estacionamientos" : 2,
+            "dormitorios" : 3,
+        },
+    ]
 
     return(
         <Fragment>
@@ -22,7 +86,29 @@ function Anuncios () {
                 <h2>Casas y Departamentos en Venta</h2>
 
                 <div className="contenedor-anuncios">
-                    <Anuncio 
+                    {arregloAnuncio.map( ({ numero, imgAnuncio, titulo, descripcion, precio, baños, estacionamientos, dormitorios }) => {
+                        return (
+                            <Anuncio 
+                                numero={numero}
+                                imgAnuncio={imgAnuncio}
+                                titulo={titulo}
+                                descripcion={descripcion}
+                                precio={precio}
+                                baños={baños}
+                                estacionamientos={estacionamientos}
+                                dormitorios={dormitorios}
+                            />
+                        );
+                    })}
+                </div>
+            </main>
+        </Fragment>
+    ) 
+}
+
+export default Anuncios;
+
+/* <Anuncio 
                         imgAnuncio={anuncio1}
                         titulo="Casa de Lujo en el Lago"
                         descripcion="Casa en el lago con exelentes vistas y a un increible precio"
@@ -80,11 +166,4 @@ function Anuncios () {
                         baños="5"
                         estacionamientos="3"
                         dormitorios="4"
-                    /> 
-                </div>
-            </main>
-        </Fragment>
-    ) 
-}
-
-export default Anuncios;
+                    /> */

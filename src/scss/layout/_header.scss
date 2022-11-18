@@ -25,6 +25,7 @@
 .barra {
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     @include m.tablet {
         flex-direction: row;
@@ -53,5 +54,15 @@
         font-weight: v.$bold;
         color: v.$blanco;
         max-width: 60rem;
+    }
+}
+
+.mobile-menu {
+    @include m.tablet {
+        display: none;
+    }
+
+    img {
+        width: 5rem;
     }
 }
