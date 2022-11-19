@@ -20,15 +20,15 @@ function Anuncio ( { numero, imgAnuncio, titulo, descripcion, precio, baños, es
 
                     <ul className="iconos-caracteristicas">
                         <li>
-                            <img loading="lazy" src={icono_wc} alt="icono wc" />
+                            <img className="icono" loading="lazy" src={icono_wc} alt="icono wc" />
                             <p>{baños}</p>
                         </li>
                         <li>
-                            <img loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
+                            <img className="icono" loading="lazy" src={icono_estacionamiento} alt="icono estacionamiento" />
                             <p>{estacionamientos}</p>
                         </li>
                         <li>
-                            <img loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
+                            <img className="icono" loading="lazy" src={icono_dormitorio} alt="icono dormitorio" />
                             <p>{dormitorios}</p>
                         </li>
                     </ul>

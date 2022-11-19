@@ -13,9 +13,20 @@ import DetalleAnuncio from "./components/DetalleAnuncio";
 // Agregar la seccion de entrada para cada entrada de blog (en el curos "creando el blog")
 
 function App() {
+  const prefiereDarkMode = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function verificarDarkMode() {
+    if(prefiereDarkMode.matches){
+      document.body.classList.add("dark-mode");
+    }
+
+    prefiereDarkMode.addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    })
+  }
 
   return (
-    <div className="App">
+    <div className="App" onLoad={verificarDarkMode}>
       <Routes>
         
         <Route path="/" element={ <Inicio />} />

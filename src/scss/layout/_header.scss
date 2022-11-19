@@ -22,6 +22,30 @@
     padding: 1rem 0 3rem 0;
 }
 
+.derecha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet {
+        align-items: flex-end;
+    }
+
+    .dark-mode-boton {
+        width: 3rem;
+        margin: 2rem 0;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include m.tablet {
+            margin-top: 1rem;
+        }
+    }
+}
+
 .barra {
     display: flex;
     flex-direction: column;
@@ -30,6 +54,7 @@
     @include m.tablet {
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-end;
     }
 }
 
